@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <sys/shm.h>
 #include <sys/types.h>
+#include <sys/wait.h>
 #include <unistd.h>
 
 struct SharedData {
@@ -21,6 +22,10 @@ int main() {
 
     if (pid == 0) {
         data->arr[0] = 56;
-        printf("")
+        printf("Child Arr 0: %d\n", data->arr[0]);
+    } else {
+        wait(NULL);
+        data->arr[0] = 3;
+        printf("Parent Arr 0: %d\n", data->arr[0]);
     }
 }
