@@ -6,9 +6,9 @@
 #include <sys/wait.h> 
 #include <unistd.h>
 
-#define BUF_SIZE 5 /* logical size of buffer */
+#define BUF_SIZE 5
 #define SHARED_MEM_SIZE (BUF_SIZE + 2) * sizeof(int)
-#define run_length 10 /* number of iterations in test run */
+#define run_length 10
 
 int main(void) {
     pid_t pid;          
