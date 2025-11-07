@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 
-#define N 5 // 5 philosophers
+#define N 5 
 
 #define THINKING 0
 #define HUNGRY 1
@@ -104,3 +104,4 @@ int main() {
     return 0;
 
 }
+
