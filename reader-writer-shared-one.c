@@ -5,8 +5,8 @@
 #include <sys/wait.h> 
 #include <unistd.h>
 
-#define SIZE sizeof(int) /* size of [int] integer */
-#define run_length 10    /* number of iterations in test run */
+#define SIZE sizeof(int) 
+#define run_length 10   
 
 int main(void) {
     pid_t pid;            
@@ -51,3 +51,4 @@ int main(void) {
     return 0;
 
 }
+
